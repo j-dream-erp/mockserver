@@ -1,0 +1,15 @@
+{
+  "feature": "Customizable Response Delays",
+  "featureSchema": {
+    "name": "Customizable Response Delays",
+    "description": "Introduces configurable delays and timeouts to simulate real-world network latency or server processing time.",
+    "userStory": "As a developer, I want to simulate different network conditions, including delays and timeouts, to ensure my client applications can handle slow responses.",
+    "acceptanceCriteria": "Admins should be able to configure response delays and simulate timeouts, and the mock server must apply these delays accurately.",
+    "diagram": "Illustration of a timing diagram showing delayed responses and simulated timeouts between client and server.",
+    "additional": "Support both fixed delays and randomized latency variations.",
+    "prompt": "Create a feature that allows configuration of response delays and timeouts. It should enable both fixed and random delays to mimic various network conditions.",
+    "code": "// Pseudo-code for response delay:\n// setTimeout(() => sendResponse(), configuredDelay);",
+    "notes": "Make sure the delay settings can be overridden for specific endpoints if needed.",
+    "filePath": "features/customizable-response-delays.json"
+  }
+}
