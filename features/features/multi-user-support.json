@@ -1,0 +1,15 @@
+{
+  "feature": "Multi-User Support",
+  "featureSchema": {
+    "name": "Multi-User Support",
+    "description": "Supports concurrent access by multiple users, offering team collaboration capabilities with role-based access control.",
+    "userStory": "As a team member, I want to collaborate on the mock server configuration with role-based permissions so that different team members can manage specific parts of the system.",
+    "acceptanceCriteria": "The system must allow multiple users to access and modify configurations concurrently, with role-based restrictions controlling access to sensitive settings.",
+    "diagram": "Diagram illustrating multi-user access with various roles and permissions interacting with the mock server.",
+    "additional": "Include mechanisms for logging user actions and auditing changes made by different users.",
+    "prompt": "Implement multi-user support in the mock server configuration, ensuring that multiple team members can collaborate with role-based access control and auditing capabilities.",
+    "code": "// Pseudo-code for role checking:\n// if(user.role !== 'admin') { restrictAccess(); }",
+    "notes": "Monitor for conflicts when multiple users are editing configurations simultaneously.",
+    "filePath": "features/multi-user-support.json"
+  }
+}
