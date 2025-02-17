@@ -1,0 +1,9 @@
+```mermaid
+graph TD;
+    A[User] -->|Login| B[Auth Server];
+    B -->|Token| C[Client App];
+    C -->|API Request| D[Resource Server];
+    D -->|Data| C;
+    C -->|Logout| B;
+    B -->|Invalidate Token| A;
+```
