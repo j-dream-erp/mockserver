@@ -1,0 +1,15 @@
+{
+  "feature": "Protocol Support",
+  "featureSchema": {
+    "name": "Protocol Support",
+    "description": "Supports multiple communication protocols such as HTTP/HTTPS, WebSocket, and gRPC for a wide range of testing scenarios.",
+    "userStory": "As a developer, I want my mock server to handle various protocols so that I can test different real-time and RPC communications.",
+    "acceptanceCriteria": "The server must correctly simulate responses for HTTP/HTTPS, WebSocket communications, and gRPC calls as per configuration.",
+    "diagram": "Diagram depicting different protocols interfacing with the mock server and returning appropriate responses.",
+    "additional": "Each protocol should have a dedicated handler to ensure precise simulation of protocol-specific behaviors.",
+    "prompt": "Implement multi-protocol support in the mock server, ensuring that HTTP/HTTPS, WebSocket, and gRPC communications are correctly simulated with appropriate responses.",
+    "code": "// Example for protocol selection:\n// if(protocol === 'HTTP') { handleHttpRequest(); }\n// else if(protocol === 'WebSocket') { handleWebSocket(); }",
+    "notes": "Keep the design modular to allow future expansion to additional protocols if needed.",
+    "filePath": "features/protocol-support.json"
+  }
+}
