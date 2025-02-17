@@ -1,0 +1,15 @@
+{
+  "feature": "Integration with CI/CD Pipelines",
+  "featureSchema": {
+    "name": "Integration with CI/CD Pipelines",
+    "description": "Integrates with automated testing environments to enable end-to-end testing and continuous integration workflows.",
+    "userStory": "As a DevOps engineer, I want to integrate the mock server into our CI/CD pipelines so that automated tests can be executed reliably across environments.",
+    "acceptanceCriteria": "The mock server must support API endpoints and be easily configurable within CI/CD scripts to simulate API behavior during automated testing.",
+    "diagram": "Diagram depicting the CI/CD pipeline with the integration of the mock server for automated testing.",
+    "additional": "Ensure configuration files are compatible with common CI/CD tools and scripts.",
+    "prompt": "Implement a feature that enables the mock server to be integrated into CI/CD pipelines, allowing for automated tests to be run against simulated API endpoints.",
+    "code": "// Example integration snippet for CI:\n// beforeTests: startMockServer();\n// runTests();\n// afterTests: stopMockServer();",
+    "notes": "Keep environmental variables and configuration separate to allow flexibility in different pipeline setups.",
+    "filePath": "features/ci-cd-integration.json"
+  }
+}
