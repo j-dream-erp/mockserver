@@ -1,0 +1,15 @@
+{
+  "feature": "Versioning Support",
+  "featureSchema": {
+    "name": "Versioning Support",
+    "description": "Allows multiple versions of API endpoints to coexist, ensuring backward compatibility while supporting new features.",
+    "userStory": "As an API consumer, I want to access different API versions so that I can continue using the older versions while new ones are being developed.",
+    "acceptanceCriteria": "The mock server must support versioned endpoints and correctly route requests to the appropriate version of the API.",
+    "diagram": "Diagram showing versioned endpoints mapped to different responses based on the API version in the request.",
+    "additional": "Include mechanisms for maintaining backward compatibility and smooth migration to newer API versions.",
+    "prompt": "Design a feature that supports versioning in API endpoints. Ensure that requests with different API version parameters are routed to the corresponding mock responses, maintaining both backward compatibility and enabling new features.",
+    "code": "// Pseudo-code for versioning:\n// switch(request.apiVersion) {\n//   case 'v1': return responseV1;\n//   case 'v2': return responseV2;\n// }",
+    "notes": "Plan for potential deprecation strategies in future versions.",
+    "filePath": "features/versioning-support.json"
+  }
+}
